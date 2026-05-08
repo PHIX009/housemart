@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #1e2d3d;
+  --color-slate: #4A5F78;
+  --color-slate-lt: #E6EEF5;
+  --color-gold: #C5A028;
+  --color-gold-lt: #FEF9E7;
+  --color-da: #8B5E3C;
+  --color-da-lt: #F5EDE6;
+  --color-hl: #5C8A3C;
+  --color-hl-lt: #EDF7E6;
+  --color-sk: #2f6b33;
+  --color-sk-lt: #E8F5E9;
+  --color-ok: #1D9E75;
+  --color-ok-bg: #E1F5EE;
+  --color-ok-tx: #085041;
+  --color-warn: #BA7517;
+  --color-warn-bg: #FAEEDA;
+  --color-warn-tx: #633806;
+  --color-bad: #E24B4A;
+  --color-bad-bg: #FCEBEB;
+  --color-bad-tx: #791F1F;
+  --color-info: #378ADD;
+  --color-info-bg: #E6F1FB;
+  --color-info-tx: #0C447C;
+  --color-bg: #F0EBE3;
+  --color-bg2: #FAF6F0;
+  --color-border: #e0d6cb;
+  --color-border2: #ede5da;
+
+  --radius-r: 8px;
+  --radius-rl: 12px;
+
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono: "DM Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-black antialiased font-sans text-[13px];
+  }
+}
