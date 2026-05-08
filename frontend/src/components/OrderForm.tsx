@@ -277,7 +277,7 @@ const OrderForm = ({ type }: OrderFormProps) => {
             </div>
 
             <div className="card bg-white border border-border rounded-rl p-4 shadow-sm">
-              <div className="ch flex items-center justify-between mb-2.5">
+              <div className="ch flex items-center justify-between mb-3.5">
                 <span className="ct text-[10px] font-semibold text-gray-600 uppercase tracking-wider">Brand Preview</span>
               </div>
               <div className="flex items-center gap-3 p-3 bg-bg2 rounded-r border border-border2">
@@ -292,6 +292,52 @@ const OrderForm = ({ type }: OrderFormProps) => {
                   <div className="text-[12px] font-bold text-black">{selectedBrand ? selectedBrand.name : 'No brand selected'}</div>
                   <div className="text-[10px] text-gray-400 font-mono">{selectedBrand ? selectedBrand.prefix + 'XXXX' : 'REF-0000'}</div>
                 </div>
+              </div>
+            </div>
+
+            <div className="card bg-white border border-border rounded-rl p-4 shadow-sm">
+              <div className="ch flex items-center justify-between mb-3.5">
+                <span className="ct text-[10px] font-semibold text-gray-600 uppercase tracking-wider">What happens next</span>
+              </div>
+              <div className="space-y-4">
+                <div className="flex gap-3">
+                  <div className="flex flex-col items-center">
+                    <div className="w-2 h-2 rounded-full bg-slate"></div>
+                    <div className="w-[1px] h-full bg-border my-1"></div>
+                  </div>
+                  <div className="pb-2">
+                    <div className="text-[11px] font-semibold text-black leading-none">Order created</div>
+                    <div className="text-[9px] text-gray-400 mt-1">Stock reserved automatically</div>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <div className="flex flex-col items-center">
+                    <div className="w-2 h-2 rounded-full bg-gold"></div>
+                    <div className="w-[1px] h-full bg-border my-1"></div>
+                  </div>
+                  <div className="pb-2">
+                    <div className="text-[11px] font-semibold text-black leading-none">Branded invoice issued</div>
+                    <div className="text-[9px] text-gray-400 mt-1">VAT calculated & sent</div>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <div className="flex flex-col items-center">
+                    <div className="w-2 h-2 rounded-full bg-ok"></div>
+                  </div>
+                  <div>
+                    <div className="text-[11px] font-semibold text-black leading-none">Fulfilment queue</div>
+                    <div className="text-[9px] text-gray-400 mt-1">Warehouse team notified</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="card bg-white border border-border rounded-rl p-4 shadow-sm">
+              <div className="ch flex items-center justify-between mb-2.5">
+                <span className="ct text-[10px] font-semibold text-gray-600 uppercase tracking-wider">Stock availability</span>
+              </div>
+              <div className="bg-bg2 border border-border rounded-r p-2.5 text-[10px] text-gray-500 text-center">
+                Add products to check live stock availability from Dubai warehouse
               </div>
             </div>
           </div>

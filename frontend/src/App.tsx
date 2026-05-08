@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
 import Feed from './pages/Feed';
+import LedgerPage from './pages/LedgerPage';
 import OrderForm from './components/OrderForm';
 
 function App() {
@@ -14,12 +15,12 @@ function App() {
           <Route path="new-order" element={<OrderForm type="salesorder" />} />
           <Route path="new-invoice" element={<OrderForm type="invoice" />} />
           
-          <Route path="quotations" element={<div>Quotations Ledger (Coming Soon)</div>} />
-          <Route path="sales-orders" element={<div>Sales Orders Ledger (Coming Soon)</div>} />
-          <Route path="invoices" element={<div>Invoices Ledger (Coming Soon)</div>} />
-          <Route path="fulfilment" element={<div>Fulfilment Hub (Coming Soon)</div>} />
-          <Route path="returns" element={<div>Returns Management (Coming Soon)</div>} />
-          <Route path="payments" element={<div>Payment Tracker (Coming Soon)</div>} />
+          <Route path="quotations" element={<LedgerPage type="quotation" />} />
+          <Route path="sales-orders" element={<LedgerPage type="salesorder" />} />
+          <Route path="invoices" element={<LedgerPage type="invoice" />} />
+          <Route path="fulfilment" element={<div className="p-10 text-center text-gray-400">Fulfilment Hub (Integrated with Orders)</div>} />
+          <Route path="returns" element={<div className="p-10 text-center text-gray-400">Returns Management (Direct Ledger)</div>} />
+          <Route path="payments" element={<div className="p-10 text-center text-gray-400">Payment Tracker (Automatic from Invoices)</div>} />
         </Route>
       </Routes>
     </BrowserRouter>
