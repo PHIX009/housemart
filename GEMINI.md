@@ -1,5 +1,10 @@
 # HouseMart Order Management System
 
+## ⚠️ STRICT ISOLATION MANDATE (ABSOLUTE)
+- **INDEPENDENT ENTITY:** HouseMart is a completely standalone project.
+- **ZERO CROSS-OVER:** This project must NEVER be connected, integrated, or cross-referenced with Goobii, PWR, or any other workspace project.
+- **EXCLUSIVE ARCHITECTURE:** All logic, UI patterns, and database structures are strictly private to the HouseMart domain.
+
 ## Project Overview
 A standalone B2B order management system for the UAE/GCC market, handling multiple brands (HM Signature, Dallah Addar, Home.ly, SKOV).
 
